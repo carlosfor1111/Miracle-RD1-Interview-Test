@@ -1,13 +1,96 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #dfdede;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+li , a, button{
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.container{
+ margin: 1rem 4rem 1rem 2rem;
+}
+
+/* model */
+.model{
+width: 100%;
+height: 100vh;
+position: fixed;
+top:0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0 0 0);
+transition: opacity .4s ease, visibility .4s ease,transform .5s ease-in-out;
+visibility: hidden;
+opacity: 0;
+transform: scale(0);
+overflow: hidden;
+z-index: 999;
+}
+.model.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.model img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height:0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+
+.model .fas{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 2rem;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    color:white;
+    font-size: 25px;
+}
+
+.Movie-nofound{
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.Gallery-Category-container{
+  display: flex;
+  margin-top: 1rem;
+}
+.Category-Buttons{
+     max-width: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+button{
+  width: 6rem;
+  height: auto;
+  margin: 0 auto 2rem auto;  
+  border:none;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10px;
 }

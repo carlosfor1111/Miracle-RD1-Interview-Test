@@ -1,0 +1,21 @@
+.MovieGallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+.movie-poster{
+    max-height: 350px;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.movie-poster:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+

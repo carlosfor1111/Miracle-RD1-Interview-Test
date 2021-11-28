@@ -1,0 +1,16 @@
+.timer-container{
+     border:1px solid white;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.timer-container div,.timer-container p ,.timer-container small{
+     background-color: white;
+}
+
+.timer-container h2{
+    background-color: white;
+    margin:1rem;
+}
